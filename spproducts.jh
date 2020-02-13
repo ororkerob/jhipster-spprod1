@@ -1,0 +1,12 @@
+entity Product {
+	name String,
+    category Category
+}
+
+entity Category {
+	name String
+}
+
+relationship ManyToOne {
+	Product{category} to Category
+}
